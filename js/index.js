@@ -42,10 +42,10 @@ document.body.appendChild(main)
 console.log(document.body)
 
 //Vitrine
-const ul = document.createElement("ul")
+/*const ul = document.createElement("ul")
 main.appendChild(ul)
 ul.classList.add('vitrine')
-ul.id = 'ul1'
+ul.id = 'ul1'*/
 //--------------------------------------------------------------------------------------------------------//
 
 //Barra de pesquisa e botão
@@ -113,23 +113,33 @@ let valor = 0
 function vitrineProd(produto){
     cardProduto(produto)    
 }
-vitrineProd(data)
+vitrineProd(data)  
 
-buttonPesq.addEventListener('click', function(){
-    
-    for (let i = 0; i < data.length; i++){
+
+   
+
+   /* for (let i = 0; i < data.length; i++){
         let filtro = document.getElementById('barPesq').value.trim()          
             if(filtro == data[i].nameItem){             
-                cardProduto(data[i])
+                return cardProduto(data[i])
+                alert("sasdas")
         }else if(filtro == data[i].tag){
-                cardProduto(data[i])
+               return cardProduto(data[i])
         }
+        
     }
-})
+   
+  
+})*/
 
 
 function cardProduto(produto){
+const ul = document.createElement("ul")
+main.appendChild(ul)
+ul.classList.add('vitrine')
+ul.id = 'ul1'
     for (let i = 0; i < produto.length; i++){
+        
         const li = document.createElement("li")
         ul.appendChild(li)
         li.classList.add('products-content')
@@ -174,7 +184,7 @@ function cardProduto(produto){
         //
         
         //Carrinho de compras
-        button.addEventListener('click', function(){
+            button.addEventListener('click', function(){
             const liCar = document.createElement("li")
             ulCar.appendChild(liCar)
             liCar.classList.add('liProdCar')
@@ -225,5 +235,21 @@ function cardProduto(produto){
         })
     }   
 }
+buttonPesq.addEventListener('click', function(){
+    
+    /*const ul = document.createElement("ul")
+    main.appendChild(ul)
+    ul.classList.add('vitrine')*/
 
+        let nomeFiltro = document.getElementById('barPesq').value.trim()
+
+        let filtro = data.filter(function(obj) { 
+            
+        return obj.tag == nomeFiltro;
+         
+        });
+        ul1.remove()
+        cardProduto(filtro) 
+        
+})  
 
