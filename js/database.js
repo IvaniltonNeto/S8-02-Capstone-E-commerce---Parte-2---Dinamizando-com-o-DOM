@@ -2,7 +2,7 @@
 
 const data = [
   {
-    id: 1,
+    id: 0,
     img: "./img/jaqueta.svg",
     nameItem: "Lightweight Jacket",
     description:
@@ -10,9 +10,10 @@ const data = [
     value: 100,
     addCart: "Adicionar ao carrinho",
     tag: ["Camisetas"],
+    quantidade: 0,
   },
   {
-    id: 2,
+    id: 1,
     img: "./img/gorro.svg",
     nameItem: "Black Hat",
     description:
@@ -20,9 +21,10 @@ const data = [
     value: 100,
     addCart: "Adicionar ao carrinho",
     tag: ["Acessórios"],
+    quantidade: 0,
   },
   {
-    id: 3,
+    id: 2,
     img: "./img/mascara.svg",
     nameItem: "Mask",
     description:
@@ -30,9 +32,10 @@ const data = [
     value: 40,
     addCart: "Adicionar ao carrinho",
     tag: ["Acessórios"],
+    quantidade: 0,
   },
   {
-    id: 4,
+    id: 3,
     img: "./img/camiseta_preta.svg",
     nameItem: "T-Shirt",
     description:
@@ -40,9 +43,10 @@ const data = [
     value: 100,
     addCart: "Adicionar ao carrinho",
     tag: ["Camisetas"],
+    quantidade: 0,
   },
   {
-    id: 5,
+    id: 4,
     img: "./img/camiseta_branca.svg",
     nameItem: "Short-Sleeve T-Shirt",
     description:
@@ -50,9 +54,10 @@ const data = [
     value: 100,
     addCart: "Adicionar ao carrinho",
     tag: ["Camisetas"],
+    quantidade: 0,
   },
   {
-    id: 6,
+    id: 5,
     img: "./img/moletom.svg",
     nameItem: "Champion Packable Jacket",
     description:
@@ -60,5 +65,6 @@ const data = [
     value: 100,
     addCart: "Adicionar ao carrinho",
     tag: ["Camisetas"],
+    quantidade: 0,
   },
 ];
