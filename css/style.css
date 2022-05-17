@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Inter:wght@100;200;300;400;500&family=Poppins:wght@100&display=swap');
+
 body, section, article, main, aside, footer, img, na, ul, li, a, h1, h2, h3, h4, h5, h6, div,p, figure, figcapiton{
     margin: 0;
     padding: 0;
@@ -18,21 +20,37 @@ header{
 
     box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
 }
-.cabecalho, nav{
-    display: flex;       
+
+#imgLogo{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 40px;
+    margin-right: 0px;
+    margin-left: 0px;
+    
 }
 
+.cabecalho, nav{
+    display: flex;      
+}
+
+#erro{
+    font-size: 50px;
+}
 .divLogo{
-    position: absolute;
-    margin: 23px 212px 23px 118px;
+    width: 50px;
+    height: 50px;
+
+    display: flex;    
+    margin: 0px 10px 23px 118px;
     font-family: 'inter';
-    font-size: 18px;           
+    font-size: 18px;          
 }
 
 .cabecalho{     
     width: 370px;
     height: 16px;    
-    margin: 27px 112px 27px 71%;
+    margin: 27px 112px 27px 60%;
     background: white;
     gap: 28px;
 }
@@ -72,6 +90,13 @@ header{
     background: #F5F5F5;
 }
 
+.card-produto:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    filter: drop-shadow(15px 10px 5px #37268C);
+}
+
 figure{
     
     width: 196px;
@@ -83,7 +108,7 @@ img{
    margin: 9px 52.19px 5px 52px;
 }
 
-img:hover{
+.imgProdutos:hover{
     -moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
@@ -138,23 +163,21 @@ img:hover{
 
 .buttonAdCar{    
     width: 206px;
-    height: 50px;
-    
+        
     text-align: center;
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    
-    border: 1.5px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 8px;
+    font-size: 14px;
+    line-height: 16px;    
+    border: none;
+    background-color: #FFFFFF;  
 }
 
 .buttonAdCar:hover{
     text-decoration-line: underline;
-    background-color: grey;
+    background-color: bisque;
+    border-radius: 30%;
     color: #2E245E;
 }
 /*---------------------------------------------------*/
@@ -210,6 +233,40 @@ img:hover{
     left: 1138px;
     top: 201px;    
     overflow-y: scroll;
+
+    background: #F5F5F5;
+}
+
+#divText{
+    width: 157px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 132px;    
+}
+
+#h2Text{
+    width: 157px;   
+    margin-left: 95px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+
+    color: #292929;
+}
+
+#h5Text{
+    width: 98px;
+    margin-left: 128px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #242424;
 }
 
 .hCar{
@@ -260,7 +317,7 @@ img:hover{
     height: 92px;    
 }
 
-.imgProdCar{
+#imgProdCar{
     margin: 12.5px 0px;
     width: 88px;
     height: 67px;
@@ -275,13 +332,13 @@ img:hover{
     margin: 28px 35px 30px 0px;
     padding: 0px;
     gap: 14px;
-
     width: 176px;
     height: 92px;
     
 }
 
-.titleCar{      
+.titleCar{
+    height: 24px;    
     font-family: 'Inter';    
     font-weight: 700;
     font-size: 16px;
@@ -299,7 +356,12 @@ img:hover{
     color: #2E245E;
 }
 
-.buttonCar{   
+.h3Qnt{
+    
+    margin-top: 3px;
+}
+
+.buttonRemCar{   
     width: 206px;
     height: 50px;
     
@@ -315,7 +377,7 @@ img:hover{
     border-radius: 8px;
 }
 
-.buttonCar:hover{
+.buttonRemCar:hover{
     text-decoration-line: underline;
     background-color: grey;
     color: #2E245E;
